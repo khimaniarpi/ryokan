@@ -49,11 +49,11 @@ app.get('/contact.html', (req, res) => {
 });
 
 app.get('/register', (req, res) => {
-  res.send('Hello World!');
+  res.sendFile(__dirname+"/views/signup.html");
 });
 
 app.get('/login', (req, res) => {
-  res.send('Hello World!');
+  res.sendFile(__dirname+"/views/login.html");
 });
 
 app.listen(port, () => {
